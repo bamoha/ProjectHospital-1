@@ -1,0 +1,485 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Hospital | Home</title>
+
+      <link rel="shortcut icon" href="{% static 'assets/images/download.png' %}" type="image/x-icon">
+    <link href="{% static 'assets/font-awesome/css/font-awesome.min.css'%}" rel="stylesheet" type="text/css">
+    <link href="{% static 'assets/css/bootstrap.css' %}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/slick.css'%}">
+    <link rel="stylesheet" href="{% static 'assets/css/jquery.fancybox.css'%}" type="text/css" media="screen" />
+    <link id="switcher" href="{% static 'assets/css/theme-color/default-theme.css'%}" rel="stylesheet">
+    <link href="{% static 'assets/css/style.css'%}" rel="stylesheet">
+
+
+  </head>
+  <body>
+
+  <!--START SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#">
+      <i class="fa fa-angle-up"></i>
+    </a>
+  <!-- END SCROLL TOP BUTTON -->
+
+  <!-- Start header  -->
+  <header id="mu-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="mu-header-area">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="mu-header-top-left">
+                  <div class="mu-top-email">
+                    <i class="fa fa-envelope"></i>
+                        <span ><a class="email-link" href="mailto:example@mail.com">mail@hospitalname.com</a></span>
+                  </div>
+                  <div class="mu-top-phone">
+                    <i class="fa fa-phone"></i>
+                    <span>(234) 8139077444</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="mu-header-top-right">
+                  <nav>
+                    <ul class="mu-top-social-nav">
+                      <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                      <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End header  -->
+  <!-- Start menu -->
+  <section id="mu-menu">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->
+          <!-- TEXT BASED LOGO -->
+          <a class="navbar-brand" href="/index"><i class=""></i><span></span></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+            <li class="active"><a href="/index">Home</a></li>
+            <li class=""><a href="#mu-features">Features</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Departments<span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                  <li><a href="department/burns">Burns</a></li>
+                  <li><a href="department/ortho">Orthopeadics and Trauma</a></li>
+                <li><a href="department/general_surgery">General Surgery</a></li>
+                <li><a href="department/general_medical">General Medical Services</a></li>
+                <li><a href="department/therapy">Physical Therapy Services</a></li>
+              </ul>
+            </li>   <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us<span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                  <li><a href="/about/hospital">The Hospital</a></li>
+                  <li><a href="/about/mission">Mission</a></li>
+                <li><a href="/about/vision">Vision</a></li>
+              </ul>
+            </li>
+
+                <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact Us<span class="fa fa-angle-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                  <li><a href="/contact/book">Book An Appointment</a></li>
+                  <li><a href="/contact/enquiry">Make An Enquiry</a></li>
+                <li><a href="/contact/complaint">Make A Complaint</a></li>
+              </ul>
+            </li>
+             <li class=""><a href="/careers">Careers</a></li>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+  </section>
+  <!-- End menu -->
+
+  <!-- Start Slider -->
+  <section id="mu-slider">
+    <!-- Start single slider item -->
+    <div class="mu-slider-single">
+      <div class="mu-slider-img">
+        <figure>
+          <img src="{% static 'assets/img/Ima.jpg' %}" alt="img">
+        </figure>
+      </div>
+      <div class="mu-slider-content">
+        <h4>Welcome To Hospital Name</h4>
+        <span></span>
+        <h2>We Will Help You Get Better</h2>
+        <p>With very dedicated staff and advanced operating techniques, we will help you regain and maintain optimum health.</p>
+        <a href="/about/mission" class="mu-read-more-btn">Read More</a>
+      </div>
+    </div>
+    <!-- Start single slider item -->
+    <!-- Start single slider item -->
+    <div class="mu-slider-single">
+      <div class="mu-slider-img">
+        <figure>
+          <img src="{% static 'assets/img/IMG-20150809-162838.jpg' %}" alt="img">
+        </figure>
+      </div>
+      <div class="mu-slider-content">
+        <h4>Welcome To Hospital Name</h4>
+        <span></span>
+        <h2>We will help you stay better</h2>
+        <p>From the experienced team of doctors,  nurses and caretakers, your health will be of utmost important to everyone. </p>
+        <a href="#" class="mu-read-more-btn">Read More</a>
+      </div>
+    </div>
+    <!-- Start single slider item -->
+  </section>
+  <!-- End Slider -->
+  <!-- Start service  -->
+  <section id="mu-service">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-9">
+          <div class="mu-service-area">
+
+            <!-- Start single service -->
+            <div class="mu-service-single">
+              <span class="fa fa-book"></span>
+              <h3>Our Mission</h3>
+              <b><p>To provide better care of the sick and return individuals into a healthy state through advanced clinical practice.
+</p></b>
+            </div>
+
+            <!-- Start single service -->
+            <!-- Start single service -->
+            <div class="mu-service-single">
+              <span class="fa fa-users"></span>
+              <h3>Our Mission</h3>
+                         <b><p>Strike to make every patient smile and make them capable of independent existence free of disability.
+</p></b>
+            </div>
+            <!-- Start single service -->
+            <!-- Start single service -->
+            <div class="mu-service-single">
+              <span class="fa fa-table"></span>
+              <h3>Our Vision</h3>
+              <b><p>To be an excellent centre in patient care using latest and most useful technology in patient management.<p></p></b>
+            </div>
+            <!-- Start single service -->
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End service  -->
+
+  <!-- Start features section -->
+  <section id="mu-features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="mu-features-area">
+            <!-- Start Title -->
+            <div class="mu-title">
+              <h2>Our Features</h2>
+              <p>Here are a number of features and reasons why we should be your first choice.</p>
+            </div>
+
+<!-- The Modal -->
+  <!-- End Title -->
+            <!-- Start features content -->
+            <div class="mu-features-content">
+              <div class="row">
+                   <div class="col-lg-4 col-md-4 col-sm-6">
+                  <div class="mu-single-feature">
+                    <span class="fa fa-certificate"></span>
+                    <h4>Easy Accessibility</h4>
+                    <p>We are located at an open area that can be accessed by the general public.</p>
+                    <a href="/about/hospital">Read More</a>
+                  </div>
+                </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                  <div class="mu-single-feature">
+                    <span class="fa fa-certificate"></span>
+                    <h4>Therapeutic Environment</h4>
+                    <p>Get treatment in a safe, strees-free and unthreatening environment.</p>
+                    <a href="/about/hospital">Read More</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4  col-sm-6">
+                  <div class="mu-single-feature">
+                    <span class="fa fa-book"></span>
+                    <h4>Professional Doctors</h4>
+                    <p>We are equipped with some of the most proffessional medical practicioners in the country.</p>
+                    <a href="/about/hospital">Read More</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                  <div class="mu-single-feature">
+                    <span class="fa fa-users"></span>
+                    <h4>Expert Nurses</h4>
+                    <p>Similar to our doctors, our nurses are well renowed practicioners in their various fields.</p>
+                    <a href="/about/hospital">Read More</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                  <div class="mu-single-feature">
+                    <span class="fa fa-book"></span>
+                    <h4>Modern Treatment Facilites</h4>
+                    <p>We possses some of the most modern treatment facilites in each of our departments. This coupled with the experience of our staff makes work easy for everyone.</p>
+                    <a href="/about/hospital">Read More</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                  <div class="mu-single-feature">
+                    <span class="fa fa-microphone"></span>
+                    <h4>Patient Doctor Relationship</h4>
+                    <p>We observe a next to perfect patient-doctor relationship governed by the most standard rules in the area</p>
+                    <a href="/about/hospital">Read More</a>
+                  </div>
+                </div>
+            </div>
+            </div>
+{#            <!-- End features content -->#}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{#  <!-- End features section -->#}
+
+
+  <!-- Start our teacher -->
+  <section id="mu-our-teacher">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-our-teacher-area">
+            <!-- begain title -->
+            <div class="mu-title">
+              <h2>Gallery</h2>
+              <p>A quick slideshow  of some of the great jobs we do at HOSPITAL NAME.</p>
+            </div>
+            <!-- end title -->
+            <!-- begain our teacher content -->
+            <div class="mu-our-teacher-content">
+              <div class="row">
+                <div class="col-lg-3 col-md-3  col-sm-6">
+                  <div class="mu-our-teacher-single">
+                    <figure class="mu-our-teacher-img">
+                      <img src="{% static 'assets/images/img1.jpg' %}" alt="teacher img">
+
+                    </figure>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <div class="mu-our-teacher-single">
+                    <figure class="mu-our-teacher-img">
+                      <img src="{% static 'assets/images/img3.jpg' %}" alt="teacher img">
+
+                    </figure>
+
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <div class="mu-our-teacher-single">
+                    <figure class="mu-our-teacher-img">
+                      <img src="{% static 'assets/images/img4.jpg' %}" alt="teacher img">
+
+                    </figure>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <div class="mu-our-teacher-single">
+                    <figure class="mu-our-teacher-img">
+                      <img src="{% static 'assets/images/img2.jpg' %}" alt="teacher img">
+
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End our teacher content -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End our teacher -->
+
+  <!-- Start testimonial -->
+  <section id="mu-testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-testimonial-area">
+            <div id="mu-testimonial-slide" class="mu-testimonial-content">
+              <!-- start testimonial single item -->
+              <div class="mu-testimonial-item">
+                <div class="mu-testimonial-quote">
+                  <blockquote>
+                    <p>Helpfulness of admitting and nursing staff. Almost everyone that I came in contact with.</p>
+                  </blockquote>
+                </div>
+                <div class="mu-testimonial-img">
+                  <img src="{% static 'assets/img/testimonial-1.png' %}" alt="img">
+                </div>
+                <div class="mu-testimonial-info">
+                  <h4>John Doe</h4>
+                  <span>Happy Patient</span>
+                </div>
+              </div>
+              <!-- end testimonial single item -->
+              <!-- start testimonial single item -->
+              <div class="mu-testimonial-item">
+                <div class="mu-testimonial-quote">
+                  <blockquote>
+                    <p>Bla Bla BLa.</p>
+                  </blockquote>
+                </div>
+                <div class="mu-testimonial-img">
+                  <img src="{% static 'assets/img/testimonial-3.png' %}" alt="img">
+                </div>
+                <div class="mu-testimonial-info">
+                  <h4>Rebaca Michel</h4>
+                  <span>Happy Patient</span>
+                </div>
+              </div>
+              <!-- end testimonial single item -->
+              <!-- start testimonial single item -->
+              <div class="mu-testimonial-item">
+                <div class="mu-testimonial-quote">
+                  <blockquote>
+                    <p> I love the fact that the Hospital gives opportunities to ask questions .</p>
+                  </blockquote>
+                </div>
+                <div class="mu-testimonial-img">
+                  <img src="{% static 'assets/img/testimonial-2.png' %}" alt="img">
+                </div>
+                <div class="mu-testimonial-info">
+                  <h4>Stev Smith</h4>
+                  <span>Happy Patient</span>
+                </div>
+              </div>
+              <!-- end testimonial single item -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End testimonial -->
+
+
+  <!-- End from blog -->
+
+  <!-- Start footer -->
+   <footer id="mu-footer">
+    <!-- start footer top -->
+    <div class="mu-footer-top">
+      <div class="container">
+        <div class="mu-footer-top-area">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="mu-footer-widget">
+                <h4>Information</h4>
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="">Departments</a></li>
+                  <li><a href="">Sitemap</a></li>
+                 <li><a href="">Hospital News</a></li>
+                  <li><a href="">Term Of Use</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="mu-footer-widget">
+                <h4>Patient Help</h4>
+                <ul>
+                  <li><a href="">Our Patients</a></li>
+                  <li><a href="">Being A patient</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="mu-footer-widget">
+                <h4>News letter</h4>
+                <p>Get latest update, news & academic offers</p>
+                <form class="mu-subscribe-form">
+                  <input type="email" placeholder="Type your Email">
+                  <button class="mu-subscribe-btn" type="submit">Subscribe!</button>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="mu-footer-widget">
+                <h4>Contact</h4>
+                <address>
+                  <p>45B Anthony Avenue, Ile-Iwe Bus-Stop, Egbe , Lagos, Nigeria</p>
+                  <p>Phone: (234) 81-390-77-444 </p>
+                  <p>Enquiries: (234) 81-390-77-444 </p>
+                  <p>Emergencies: (234) 81-390-77-444 </p>
+                  <p>Website: www.hospitalname.com</p>
+                  <p>Email: info@hospitalname.com</p>
+                </address>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end footer top -->
+    <!-- start footer bottom -->
+    <div class="mu-footer-bottom">
+      <div class="container">
+        <div class="mu-footer-bottom-area">
+          <p>&copy; 2016 Hospital Name.</p>
+        </div>
+      </div>
+    </div>
+    <!-- end footer bottom -->
+  </footer>
+  <!-- End footer -->
+
+  <!-- jQuery library -->
+  <script src="{% static 'assets/js/jquery.min.js'%}"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="{% static 'assets/js/bootstrap.js' %}"></script>
+  <!-- Slick slider -->
+  <script type="text/javascript" src="{% static 'assets/js/slick.js'%}"></script>
+  <!-- Counter -->
+  <script type="text/javascript" src="{% static 'assets/js/waypoints.js' %}"></script>
+  <script type="text/javascript" src="{% static 'assets/js/jquery.counterup.js' %}"></script>
+  <!-- Mixit slider -->
+  <script type="text/javascript" src="{% static 'assets/js/jquery.mixitup.js'%}"></script>
+  <!-- Add fancyBox -->
+  <script type="text/javascript" src="{% static 'assets/js/jquery.fancybox.pack.js' %}"></script>
+
+
+  <!-- Custom js -->
+  <script src="{% static 'assets/js/custom.js'%}"></script>
+
+</html>
+
+
